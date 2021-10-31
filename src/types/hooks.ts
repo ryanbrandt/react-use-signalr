@@ -1,6 +1,6 @@
 import { HubConnectionState } from "@microsoft/signalr";
 
-import { ISignalRClient } from ".";
+import { ISignalRClient } from "./client";
 
 export interface ILimitedSignalRClient
   extends Pick<ISignalRClient, "on">,

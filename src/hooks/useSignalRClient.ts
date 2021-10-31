@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { HubConnectionState } from "@microsoft/signalr";
 
-import SignalRClient from "../client";
-import { UseSignalRClientReturnType } from "../types";
-import { ISignalRClient } from "../types/client";
+import SignalRClient from "client";
+import { UseSignalRClientReturnType } from "types";
+import { ISignalRClient } from "types/client";
 
 export const useSignalRClient = (
   hubUrl: string
@@ -39,8 +39,8 @@ export const useSignalRClient = (
   return [
     connectionState,
     {
-      on: clientRef.current.on,
-      emitAsync: clientRef.current.emitAsync,
+      on: clientRef.current?.on,
+      emitAsync: clientRef.current?.emitAsync,
     },
   ];
 };

@@ -10,7 +10,7 @@ import {
   StateChangeCallbackType,
   ISignalRClient,
   GenericVoidCallbackType,
-} from "../types/client";
+} from "types/client";
 
 class SignalRClient implements ISignalRClient {
   private _wsConnection: HubConnection;

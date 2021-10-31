@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-import { ILimitedSignalRClient } from "../types";
+import { ILimitedSignalRClient } from "types";
 
 export const useSignalRMethodChannel = <T>(
   client: ILimitedSignalRClient,

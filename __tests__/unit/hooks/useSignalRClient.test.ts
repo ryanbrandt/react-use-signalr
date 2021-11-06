@@ -29,7 +29,7 @@ describe("useSignalRClient", () => {
     } = renderHook<void, UseSignalRClientReturnType>(() =>
       useSignalRClient(MOCK_URL)
     );
-    console.log(renderHookResult);
+
     const [state, client] = renderHookResult[0] as UseSignalRClientReturnType;
 
     expect(state).toBe(HubConnectionState.Connecting);
